@@ -1,14 +1,83 @@
 import bannerBackground from "../assets/banner_wallpaper.svg";
-import './Skills.css'
 
 const Expertise = () => {
-  
   return (
     <>
+
+{/* <section id="skills">
+			<h1 className="section-heading mb75px ">
+				<span>
+					<i className="fas fa-chalkboard-teacher"></i>
+				</span>
+				<span>SKILLS</span>
+			</h1>
+
+			<div className="skills-display">
+
+				<div className="skill-progress">
+					<div className="mb-orange f85 eighty-five-percent">
+						<div className="skill-name">
+							<span> HTML </span>
+						</div>
+					</div>
+				</div>
+				<div className="skill-progress">
+					<div className="mb-gold f85 eighty-five-percent">
+						<div className="skill-name">
+							<span> CSS </span>
+						</div>
+					</div>
+				</div>
+				<div className="skill-progress">
+					<div className="mb-light-purple f80 eighty-percent">
+						<div className="skill-name">
+							<span> Javascript </span>
+						</div>
+					</div>
+				</div>
+					<div className="skill-progress">
+					<div className="mb-orange f85 eighty-five-percent">
+						<div className="skill-name">
+							<span>ReactJs</span>
+						</div>
+					</div>
+				</div>
+
+				<div className="skill-progress">
+					<div className="mb-teal f70 seventy-percent">
+						<div className="skill-name">
+							<span> NodeJs </span>
+						</div>
+					</div>
+				</div>
+				<div className="skill-progress">
+					<div className="mb-teal f85 eighty-five-percent">
+						<div className="skill-name">
+							<span> MongoDB </span>
+						</div>
+					</div>
+				</div>
+				<div className="skill-progress">
+					<div className="mb-blue f70 seventy-percent" id="node">
+						<div className="skill-name">
+							<span> ExpressJs </span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section> */}
+
       <div className="mt-12">
-        <h1 className="fas fa-chalkboard-teacher">
-          Skills
+        <h1 className="section-heading mb75px mb-20 text-center text-blue-800 hover:text-orange-600">
+          <span>
+            <i className="fas fa-chalkboard-teacher tracking-widest"></i>
+          </span>
+          <span>SKILLS</span>
         </h1>
+        {/* <h1 className="fas fa-chalkboard-teacher">
+          Skills
+        </h1> */}
         {/* box section */}
 
         <div
@@ -16,14 +85,15 @@ const Expertise = () => {
             backgroundImage: `url(${bannerBackground})`,
             backgroundSize: "cover",
           }}
-          className="box-container items-center flex py-16 rounded-full"
+          className="box-container items-center flex py-16"
         >
           <div className="flex text-white ml-10">
             {/* text container */}
             <div className="w-2/3 text-center space-y-4 ms-20">
               <h1 className="text-4xl font-bold">I love these technologies</h1>
               <p>
-              I have a deep passion for a diverse array of skills that fuel my enthusiasm for software development.
+                I have a deep passion for a diverse array of skills that fuel my
+                enthusiasm for software development.
               </p>
               <button className=" text-2xl px-4 py-2 bg-orange-500 rounded-full shadow-lg hover:bg-orange-600">
                 Hire Me

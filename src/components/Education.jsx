@@ -1,77 +1,104 @@
-import bannerBackground from "../assets/banner_wallpaper.svg";
+import './experience.css'
+import PietLogo from '../assets/piet-logo.png'
+import CbseLogo from '../assets/cbse.jpg'
+
 const Education = () => {
   return (
     <>
-      <div className="mt-12">
-        <h1 className=" mb-16 text-5xl font-bold  text-center">
-          Education
+      <section id="education">
+        <h1 className="section-heading mb75px mt-10 text-blue-800 hover:text-orange-600">
+          <span className="WE">
+            <i className="fas fa-graduation-cap"></i>
+          </span>
+          <span className="WE text-4xl font-bold"> Education </span>
         </h1>
-        {/* box section */}
 
-        <div
-          style={{
-            backgroundImage: `url(${bannerBackground})`,
-            backgroundSize: "cover",
-          }}
-          className="box-container items-center flex py-16"
-        >
-          <div className="flex text-white ml-10">
-            {/* text container */}
-            <div className="w-2/3 text-center space-y-4">
-              <h1 className="text-4xl font-bold">I love these technologies</h1>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic
-                autem facere molestias libero eaque praesentium, dignissimos
-                dolores, cum nisi rerum, modi corporis eligendi harum. Ut
-                provident saepe in et ipsum.
+        <div className="timeline">
+          <div className="timeline-box left ">
+            <div className="timeline-container">
+              <div className="timeline-logo mait">
+                <img src={PietLogo} />
+              </div>
+              <h3 className="experience-designation  m0 m-blue"> B.Tech. CSE </h3>
+              <h4 className="experience-company-name ">
+                {" "}
+                Panipat Institute Of Engineering & Technology{" "}
+              </h4>
+              <h5 className="experience-duration m0"> Aug 2018 - Aug 2022 </h5>
+
+              <p className="experience-description text-align-justify">
+                {" "}
+                Bachelor Of Technology in Computer Science & Engineering
+                Department from Panipat Institute Of Engineering & Technology.
+                Computer Science Engineering (CSE) encompasses a variety of topics 
+                that relates to computation, like analysis of algorithms, programming 
+                languages, program design, software, and computer hardware.
+                {" "}
               </p>
-              <button className=" text-2xl px-4 py-2 bg-orange-500 rounded-full shadow-lg">
-                Hire Me
-              </button>
             </div>
           </div>
-          <div className="flex justify-center">
-            {/* skills container */}
 
-            <div className="flex justify-center w-2/3 h-fit space-x-3  flex-wrap">
-              <p className="bg-gray-300 w-fit px-3 py-2 mt-1 rounded-full hover:bg-orange-500 cursor-pointer">
-                Core Java
+          <div className="timeline-box right ">
+            <div className="timeline-container">
+              <div className="timeline-logo cbse">
+                <img src={CbseLogo} />
+              </div>
+              <h3 className="experience-designation  m0 m-blue">
+                {" "}
+                Class XII{" "}
+              </h3>
+              <h4 className="experience-company-name "> CBSE </h4>
+              {/* <h4 className="experience-company-name ">
+                {" "}
+                GSBV Laxmi Nagar, Delhi-92{" "}
+              </h4> */}
+              <h5 className="experience-duration m0"> Feb 2016 - Feb 2017 </h5>
+              <p
+                className="experience-description"
+                style={{ "text-align": "right" }}
+              >
+                {" "}
+                Non-medical student, secured a net aggregate of 76% in class
+                XII{" "}
               </p>
+            </div>
+          </div>
 
-              <p className="bg-gray-300 w-fit px-3 py-2 mt-2 rounded-full hover:bg-orange-500 cursor-pointer">
-                J2EE
-              </p>
+          <div className="timeline-box left ">
+            <div className="timeline-container">
+              <div className="timeline-logo cbse">
+                <img src={CbseLogo} />
+              </div>
+              <h3 className="experience-designation  m0 m-blue">
+                {" "}
+                Class X{" "}
+              </h3>
+              <h4 className="experience-company-name "> CBSE </h4>
+              {/* <h4 className="experience-company-name ">
+                {" "}
+                CPS Chhapra{" "}
+              </h4> */}
+              <h5 className="experience-duration m0"> Feb 2014 - Feb 2015 </h5>
 
-              <p className="bg-gray-300 w-fit px-3 py-2 mt-2 rounded-full hover:bg-orange-500 cursor-pointer">
-                Spring Boot Framework
+              <p
+                className="experience-description"
+                style={{ "text-align": "right" }}
+              >
+                {" "}
+                Secured a net CGPA of 10 in className X
               </p>
-              <p className="bg-gray-300 w-fit px-3 py-2 mt-2 rounded-full hover:bg-orange-500 cursor-pointer">
-                HTML
-              </p>
+            </div>
+          </div>
 
-              <p className="bg-gray-300 w-fit px-3 py-2 mt-2 rounded-full hover:bg-orange-500 cursor-pointer">
-                CSS
-              </p>
-
-              <p className="bg-gray-300 w-fit px-3 py-2 mt-2 rounded-full hover:bg-orange-500 cursor-pointer">
-                Javascript
-              </p>
-
-              <p className="bg-gray-300 w-fit px-3 py-2 mt-2 rounded-full hover:bg-orange-500 cursor-pointer">
-                jQuery
-              </p>
-
-              <p className="bg-gray-300 w-fit px-3 py-2 mt-2 rounded-full hover:bg-orange-500 cursor-pointer">
-                ReactJS
-              </p>
-              
-              <p className="bg-gray-300 w-fit px-3 py-2 mt-2 rounded-full hover:bg-orange-500 cursor-pointer">
-                Deploying on Clound
-              </p>
+          <div className="timeline-divider">
+            <div className="timeline-traveller">
+              <div>
+                <i className="fas fa-car-side"></i>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

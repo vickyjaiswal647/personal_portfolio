@@ -4,8 +4,8 @@ import TcsLogo from '../assets/TCS-iON-Logo.png'
 const Experince = () => {
   return (
     <>
-      <div id="experience">
-        <h1 className="section-heading mb75px">
+      <section id="experience">
+        <h1 className="section-heading mb75px text-blue-800 hover:text-orange-600">
           <span className="WE">
             <i className="fas fa-briefcase"></i>
           </span>
@@ -73,7 +73,7 @@ const Experince = () => {
           </div>
 
         </div>
-      </div>
+      </section>
     </>
   );
 };

@@ -3,15 +3,14 @@ import Header from "./components/Header";
 import "./App.css";
 import Banner from "./components/Banner";
 import About from "./components/About";
-import Services from "./components/Services";
-import Expertise from "./components/Expertise";
+import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import Experince from "./components/Experience";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
 
 function App() {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
   return (
     <>
@@ -19,7 +18,7 @@ function App() {
       <Banner />
       <About />
       {/* <Services /> */}
-      <Expertise />
+      <Skills />
       <Experince/>
       <Education/>
       <Contact/>

@@ -1,77 +1,145 @@
-import bannerBackground from "../assets/banner_wallpaper.svg";
+import "./Experience.css";
+
 const Contact = () => {
   return (
     <>
-      <div className="mt-12">
-        <h1 className=" mb-16 text-5xl font-bold  text-center">
-          Contact
+      <section id="contact">
+        <h1 className="section-heading mb50px text-center">
+          <span>
+            <i className="far fa-address-card"></i>
+          </span>
+          <span> Contact </span>
         </h1>
-        {/* box section */}
 
-        <div
-          style={{
-            backgroundImage: `url(${bannerBackground})`,
-            backgroundSize: "cover",
-          }}
-          className="box-container items-center flex py-16"
-        >
-          <div className="flex text-white ml-10">
-            {/* text container */}
-            <div className="w-2/3 text-center space-y-4">
-              <h1 className="text-4xl font-bold">I love these technologies</h1>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic
-                autem facere molestias libero eaque praesentium, dignissimos
-                dolores, cum nisi rerum, modi corporis eligendi harum. Ut
-                provident saepe in et ipsum.
-              </p>
-              <button className=" text-2xl px-4 py-2 bg-orange-500 rounded-full shadow-lg">
-                Hire Me
+        <div id="contact-container">
+          <div id="contact-form-container">
+            <form id="contact-form">
+              <div className="input-group">
+                <input id="SenderName" name="name" type="text" required="" />
+                <span className="highlight"></span>
+                <span className="bar"></span>
+                <label> Name</label>
+              </div>
+
+              <div className="input-group">
+                <input
+                  id="SenderSubject"
+                  name="email"
+                  type="text"
+                  required=""
+                />
+                <span className="highlight"></span>
+                <span className="bar"></span>
+                <label>Subject</label>
+              </div>
+
+              <div className="input-group">
+                <textarea
+                  id="SenderMessage"
+                  name="message"
+                  rows="2"
+                  cols="40"
+                  required=""
+                  style={{ height: "63px", "overflow-y": "hidden" }}
+                ></textarea>
+                <span className="highlight"></span>
+                <span className="bar"></span>
+                <label>Message</label>
+              </div>
+              <button className="sub-btn" id="send-button" type="submit">
+                SEND MESSAGE
               </button>
-            </div>
+            </form>
           </div>
-          <div className="flex justify-center">
-            {/* skills container */}
 
-            <div className="flex justify-center w-2/3 h-fit space-x-3  flex-wrap">
-              <p className="bg-gray-300 w-fit px-3 py-2 mt-1 rounded-full hover:bg-orange-500 cursor-pointer">
-                Core Java
-              </p>
+          <div id="my-details-container">
+            <h3> Get In touch </h3>
+            <p>
+              {" "}
+              I would love to hear from you. Contact me on the number provided
+              below.{" "}
+            </p>
 
-              <p className="bg-gray-300 w-fit px-3 py-2 mt-2 rounded-full hover:bg-orange-500 cursor-pointer">
-                J2EE
-              </p>
-
-              <p className="bg-gray-300 w-fit px-3 py-2 mt-2 rounded-full hover:bg-orange-500 cursor-pointer">
-                Spring Boot Framework
-              </p>
-              <p className="bg-gray-300 w-fit px-3 py-2 mt-2 rounded-full hover:bg-orange-500 cursor-pointer">
-                HTML
-              </p>
-
-              <p className="bg-gray-300 w-fit px-3 py-2 mt-2 rounded-full hover:bg-orange-500 cursor-pointer">
-                CSS
-              </p>
-
-              <p className="bg-gray-300 w-fit px-3 py-2 mt-2 rounded-full hover:bg-orange-500 cursor-pointer">
-                Javascript
-              </p>
-
-              <p className="bg-gray-300 w-fit px-3 py-2 mt-2 rounded-full hover:bg-orange-500 cursor-pointer">
-                jQuery
-              </p>
-
-              <p className="bg-gray-300 w-fit px-3 py-2 mt-2 rounded-full hover:bg-orange-500 cursor-pointer">
-                ReactJS
-              </p>
-              
-              <p className="bg-gray-300 w-fit px-3 py-2 mt-2 rounded-full hover:bg-orange-500 cursor-pointer">
-                Deploying on Clound
-              </p>
+            <h3> My Address </h3>
+            <div className="my-details-info-container">
+              <i className="fas fa-map-marker-alt"></i>
+              <span>Pratik Nagar Yerawada Pune, India</span>
+            </div>
+            <div className="my-details-info-container">
+              <a
+                className="contact-section-mail-link otherLinks"
+                rel="noopener noreferrer"
+                hidden
+                href="tel:7765942920"
+              >
+                <i className="fas fa-mobile-alt"></i>
+                <span>7765942920</span>
+              </a>
+            </div>
+            <div className="my-details-info-container">
+              <a
+                className="contact-section-mail-link otherLinks"
+                rel="noopener noreferrer"
+                hidden
+                href="mailto:vickyjaiswal647@gmail.com"
+              >
+                <i className="far fa-envelope"></i>
+                <span>vickyjaiswal647@gmail.com</span>
+              </a>
             </div>
           </div>
         </div>
-      </div>
+        <div className="text-center social-icons">
+          <ul className="horizontal-list no-list-style bottom-icons">
+            <li>
+              <a
+                rel="noopener noreferrer"
+                hidden
+                href="https://www.linkedin.com/in/sagar-garg-00a509125/"
+              >
+                <i className="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+
+            <li>
+              <a
+                rel="noopener noreferrer"
+                hidden
+                href="mailto:sagargupta1417@gmail.com"
+              >
+                <i className="fas fa-envelope"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                rel="noopener noreferrer"
+                hidden
+                href="https://github.com/sagargarg01"
+              >
+                <i className="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                rel="noopener noreferrer"
+                hidden
+                href="https://www.facebook.com/sagar.garg.79025"
+              >
+                <i className="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                rel="noopener noreferrer"
+                hidden
+                href="https://www.quora.com/profile/Sagar-Garg-45"
+              >
+                <i className="fab fa-quora"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </>
   );
 };
