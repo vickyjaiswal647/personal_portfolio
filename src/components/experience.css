@@ -1,0 +1,173 @@
+#experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+    font-size: 30px
+    ;
+  }
+  section:nth-child(2n) {
+    background-color: #9e9b9b29;
+  }
+  
+  section:nth-child(2n + 1) {
+    background-color: white;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* body {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+    user-select: none;
+  } */
+  
+  a,
+  button {
+    cursor: pointer;
+  }
+  
+  img {
+    pointer-events: none;
+  }
+  
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /*Body Header*/
+  
+  /*Horizontal Lists*/
+  
+  /*text alignment*/
+  
+  /*name*/
+  
+  
+  /*skills section*/
+  
+  
+  /* Work Experience */
+  
+  .timeline {
+    position: relative;
+    width: 75%;
+    margin-top: 50px;
+  }
+  
+  .timeline-box {
+    padding: 5px;
+    width: 40%;
+    min-height: 150px;
+    position: relative;
+    left: 5%;
+    text-align: right;
+  }
+  
+  .timeline-box::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: lightgrey;
+    top: 10%;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .timeline-box:nth-child(2n) {
+    left: 53%;
+  }
+  
+  .timeline-box:nth-child(2n + 1)::after {
+    right: -14.3%;
+  }
+  
+  .timeline-box:nth-child(2n)::after {
+    left: -9%;
+  }
+  
+  .timeline-container {
+    padding: 8px;
+  }
+  
+  .timeline-logo {
+    position: absolute;
+    width: 85px;
+    overflow: hidden;
+  }
+  
+  .timeline-logo > img {
+    width: 100%;
+  }
+  
+  .mait {
+    margin-top: -5px;
+  }
+  
+  .timeline-divider {
+    position: absolute;
+    width: 0;
+    top: 5%;
+    left: 50%;
+    border: 1px dashed #0096fa6b;
+    height: 73%;
+    color: #433e3f;
+  }
+  
+  .work-timeline-divider-height {
+    height: 61%;
+  }
+  
+  .timeline-divider .timeline-traveller {
+    position: sticky;
+    top: 135px;
+    z-index: 2;
+  }
+  
+  .timeline-divider i {
+    transform: rotate(90deg);
+    margin-top: -35px;
+    display: block;
+    color: #2857a4;
+  }
+  
+  .experience-designation {
+    font-size: 1.4rem;
+  }
+  
+  .experience-company-name {
+    margin: 5px 0 0;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+  
+  .TCS {
+    color: #eb822d;
+  }
+  
+  .experience-duration {
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
+    font-size: 1rem;
+  }
+  
+  .experience-description {
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
+  }
+  
+  .text-align-justify {
+    text-align: start;
+  }
+  
+  /* Portfolio Section */
+  
+  
