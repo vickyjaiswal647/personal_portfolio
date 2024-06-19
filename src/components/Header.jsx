@@ -1,38 +1,15 @@
 import { useRef, useState } from "react";
 
-const Header = () => {
+const Header = ({sectionRefs}) => {
+  
   const [brandName, setBrandName] = useState("Portfolio");
   const [menuLinks, setMenuLinks] = useState([
-    {
-      title: "Home",
-      link: "/home",
-      id: 1,
-    },
-    {
-      title: "About",
-      link: "/About",
-      id: 2,
-    },
-    {
-      title: "Skills",
-      link: "/skills",
-      id: 3,
-    },
-    {
-      title: "Experience",
-      link: "/experience",
-      id: 4,
-    },
-    {
-      title: "Education",
-      link: "/education",
-      id: 5,
-    },
-    {
-      title: "Contact",
-      link: "/Contact",
-      id: 6,
-    }
+    { title: "Home", link: "home", id: 1},
+    { title: "About", link: "about", id: 2},
+    { title: "Skills", link: "skills", id: 3},
+    { title: "Experience", link: "experience",id: 4},
+    { title: "Education", link: "education", id: 5},
+    { title: "Contact", link: "contact", id: 6}
   ]);
 
   const [actionButton, setActionButton] = useState({
@@ -40,14 +17,14 @@ const Header = () => {
     link: "/hire-me",
   });
 
-  const sectionRef = useRef(null);
-  const LinksClickHandler = ()=>{
-    sectionRef.current.scrollIntoView({behavior: 'smooth'});
+  //const sectionRef = useRef(null);
+  const LinkClickHandler = (link)=>{
+    sectionRefs[link].current.scrollIntoView({behavior: 'smooth'});
   };
 
   return (
     <>
-      <div className="h-20 border main flex justify-between items-center px-16 bg-gray-100">
+      <div className="h-20 w-full border flex justify-between items-center px-16 bg-gray-100 fixed ">
         <div>
           {/* brand logo */}
           <h1 className="text-2xl font-bold text-purple-800 hover:text-orange-600 cursor-pointer">{brandName}</h1>
@@ -57,7 +34,7 @@ const Header = () => {
           {/* menu links */}
 
           {menuLinks.map((link) => (
-            <span key={link.id} style={{height:'200vh'}} ref={sectionRef} className="font-bold text-purple-800 hover:text-orange-600 cursor-pointer" onClick={LinksClickHandler}>
+            <span key={link.id} style={{height:'200vh'}} className="font-bold text-purple-800 hover:text-orange-600 cursor-pointer" onClick={() => LinkClickHandler(link.link)}>
               {link.title}
             </span>
           ))}

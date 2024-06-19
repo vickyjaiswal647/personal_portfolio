@@ -18,7 +18,7 @@ const About = () => {
   });
   return (
     <>
-      <div className="main-container border py-16">
+      <div className="main-container border py-16" id="about">
         {/* <h1 className="text-center pb-16 text-blue-800 text-4xl font-bold">
           About Me
         </h1> */}
