@@ -1,4 +1,4 @@
-import './experience.css'
+import './Experience.css'
 import TcsLogo from '../assets/TCS-iON-Logo.png'
 
 const Experince = () => {

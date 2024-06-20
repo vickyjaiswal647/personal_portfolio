@@ -3,7 +3,7 @@ import bannerBackground from "../assets/banner_wallpaper.svg";
 import Typed from "typed.js";
 import { useRef } from "react";
 import { useEffect } from "react";
-const Banner = () => {
+const Banner = ({contactRef}) => {
   const el = useRef(null);
 
   useEffect(() => {
@@ -22,6 +22,10 @@ const Banner = () => {
       typed.destroy();
     };
   }, []);
+
+  const LinkClickHandler = () =>{
+    contactRef.current.scrollIntoView({behavior: 'smooth'});
+  }
 
   return (
     <div
@@ -65,7 +69,7 @@ const Banner = () => {
           <br />
           <a
             className=" text-2xl px-3  py-2 bg-orange-500  rounded-full shadow-lg hover:bg-orange-600"
-            href="/contact"
+            onClick={() => LinkClickHandler()}
           >
             Contact Me
           </a>

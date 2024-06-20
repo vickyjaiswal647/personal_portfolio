@@ -1,6 +1,10 @@
 import bannerBackground from "../assets/banner_wallpaper.svg";
 
-const Expertise = () => {
+const Expertise = ({contactRef}) => {
+
+  const LinkClickHandler = ()=>{
+    contactRef.current.scrollIntoView({behaviour:"smooth"});
+  }
   return (
     <>
 
@@ -95,7 +99,9 @@ const Expertise = () => {
                 I have a deep passion for a diverse array of skills that fuel my
                 enthusiasm for software development.
               </p>
-              <button className=" text-2xl px-4 py-2 bg-orange-500 rounded-full shadow-lg hover:bg-orange-600">
+              <button 
+                className=" text-2xl px-4 py-2 bg-orange-500 rounded-full shadow-lg hover:bg-orange-600"
+                onClick={() => LinkClickHandler()}>
                 Hire Me
               </button>
             </div>

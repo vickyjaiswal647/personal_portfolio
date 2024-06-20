@@ -1,3 +1,22 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+main {
+  padding-top: 80px; /* Adjust padding to prevent content overlap with fixed header */
+}
+
+section {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+} 
+
 .section-heading {
     margin-bottom: 1rem;
     /* margin-left: 23%; */

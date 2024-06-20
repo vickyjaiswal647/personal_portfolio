@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import "./App.css";
+import './components/Experience.css';
 import Header from "./components/Header";
 import Banner from "./components/Banner";
 import About from "./components/About";
@@ -28,16 +29,18 @@ function App() {
 
   return (
     <>
-      <Header  sectionRefs={sectionRefs} />
+      <header className="header">
+        <Header  sectionRefs={sectionRefs} />
+      </header>
       <main>
-        <section ref={homeRef}>
-          <Banner />
+        <section ref={homeRef} style={{ height: '90vh'}}>
+          <Banner contactRef={contactRef} />
         </section>
         <section ref={aboutRef}>
           <About />
         </section>
         <section ref={skillsRef}>
-          <Skills />
+          <Skills contactRef={contactRef}/>
         </section>
         <section ref={experienceRef}>
           <Experince />
