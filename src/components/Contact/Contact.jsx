@@ -1,5 +1,4 @@
-import "./Experience.css";
-
+import "./Contact.css"
 const Contact = () => {
   return (
     <>
@@ -47,7 +46,7 @@ const Contact = () => {
                 <label>Message</label>
               </div>
               <button className="sub-btn" id="send-button" type="submit">
-                SEND MESSAGE
+                Send Message
               </button>
             </form>
           </div>
@@ -69,7 +68,7 @@ const Contact = () => {
               <a
                 className="contact-section-mail-link otherLinks"
                 rel="noopener noreferrer"
-                hidden
+               
                 href="tel:7765942920"
               >
                 <i className="fas fa-mobile-alt"></i>
@@ -80,7 +79,7 @@ const Contact = () => {
               <a
                 className="contact-section-mail-link otherLinks"
                 rel="noopener noreferrer"
-                hidden
+                
                 href="mailto:vickyjaiswal647@gmail.com"
               >
                 <i className="far fa-envelope"></i>
@@ -94,7 +93,7 @@ const Contact = () => {
             <li>
               <a
                 rel="noopener noreferrer"
-                hidden
+                
                 href="https://www.linkedin.com/in/sagar-garg-00a509125/"
               >
                 <i className="fab fa-linkedin-in"></i>
@@ -104,8 +103,8 @@ const Contact = () => {
             <li>
               <a
                 rel="noopener noreferrer"
-                hidden
-                href="mailto:sagargupta1417@gmail.com"
+                
+                href="mailto:vickyjaiswal647@gmail.com"
               >
                 <i className="fas fa-envelope"></i>
               </a>
@@ -113,7 +112,7 @@ const Contact = () => {
             <li>
               <a
                 rel="noopener noreferrer"
-                hidden
+               
                 href="https://github.com/sagargarg01"
               >
                 <i className="fab fa-github"></i>
@@ -122,7 +121,7 @@ const Contact = () => {
             <li>
               <a
                 rel="noopener noreferrer"
-                hidden
+                
                 href="https://www.facebook.com/sagar.garg.79025"
               >
                 <i className="fab fa-facebook-f"></i>

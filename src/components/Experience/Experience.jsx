@@ -1,10 +1,10 @@
 import './Experience.css'
-import TcsLogo from '../assets/TCS-iON-Logo.png'
+import TcsLogo from '../../assets/TCS-iON-Logo.png'
 
 const Experince = () => {
   return (
     <>
-      <section id="experience">
+      <div id="experience">
         <h1 className="section-heading mb75px text-blue-800 hover:text-orange-600">
           <span className="WE">
             <i className="fas fa-briefcase"></i>
@@ -23,8 +23,10 @@ const Experince = () => {
               <h4 className="experience-company-name TCS"> Tata Consultancy Services </h4>
               <h5 className="experience-duration m0"> Nov 2023 - Present </h5>
               <p className="experience-description text-align-justify">
-                • created frontend UI using ReactJS framework and material UI <br/>
-                • Back-end is supported by Firebase						
+                • Working on a framework similar to Spring Boot, which uses HTML, CSS, JavaScript and jQuery
+                for the front-end and Java for the back-end. <br/>
+                • Collaborating with the TCS iON Core team to create solutions that will benefit more than 1000
+                businesses.						
               </p>
             </div>
           </div>
@@ -73,7 +75,7 @@ const Experince = () => {
           </div>
 
         </div>
-      </section>
+      </div>
     </>
   );
 };

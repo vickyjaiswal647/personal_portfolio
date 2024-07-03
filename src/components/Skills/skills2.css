@@ -1,0 +1,127 @@
+/* Base Styles */
+.section-heading {
+    margin-bottom: 75px;
+    color: #2c5282;
+    font-size: 2.5rem;
+    text-align: center;
+    transition: color 0.3s ease;
+  }
+  
+  .section-heading:hover {
+    color: #ed8936;
+  }
+  
+  .box-container {
+    background-size: cover;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .text-white {
+    color: #fff;
+  }
+  
+  .space-y-4 > * {
+    margin-bottom: 1rem;
+  }
+  
+  .button {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #ed8936;
+    border-radius: 9999px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #dd6b20;
+  }
+  .client-side {
+    display: flex;
+    column-gap: 5px;
+    margin: 0 10px;
+  }
+  .server-side {
+    display: flex;
+    column-gap: 5px;
+    margin: 10px;
+  }
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .skill {
+    background-color: #e2e8f0;
+    padding: 0.5rem 1rem;
+    margin-top: 0.25rem;
+    border-radius: 9999px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .skill:hover {
+    background-color: #ed8936;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .section-heading {
+      font-size: 2rem;
+      margin-bottom: 50px;
+    }
+  
+    .box-container {
+      flex-direction: column;
+      padding: 2rem 0;
+    }
+  
+    .text-white {
+      text-align: center;
+    }
+  
+    .space-y-4 {
+      margin-left: 0;
+      width: 100%;
+    }
+  
+    .button {
+      font-size: 1.25rem;
+      padding: 0.5rem 0.75rem;
+    }
+  
+    .skill {
+      font-size: 0.875rem;
+      padding: 0.25rem 0.5rem;
+      margin-top: 0.5rem;
+    }
+  
+    .skills-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section-heading {
+      font-size: 1.5rem;
+    }
+  
+    .button {
+      font-size: 1rem;
+      padding: 0.25rem 0.5rem;
+    }
+  
+    .skill {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.5rem;
+    }
+  }
+  

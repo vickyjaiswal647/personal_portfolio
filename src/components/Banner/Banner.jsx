@@ -1,5 +1,5 @@
-import bannerImage from "../assets/developer.png";
-import bannerBackground from "../assets/banner_wallpaper.svg";
+import bannerImage from "../../assets/developer.png";
+import bannerBackground from "../../assets/banner_wallpaper.svg";
 import Typed from "typed.js";
 import { useRef } from "react";
 import { useEffect } from "react";
@@ -62,7 +62,7 @@ const Banner = ({contactRef}) => {
               <i className="fa-brands text-4xl  fa-youtube"></i>
             </a>
 
-            <a className=" hover:bg-orange-600  border  cursor-pointer px-3 py-4 mt-4 w-16 h-16  rounded-full flex justify-center items-center bg-gray-800">
+            <a href="http://www.linkedin.com/in/vicky-jaiswal-92a33a175" target="_blank" className=" hover:bg-orange-600  border  cursor-pointer px-3 py-4 mt-4 w-16 h-16  rounded-full flex justify-center items-center bg-gray-800">
               <i className="fa-brands text-4xl  fa-linkedin-in"></i>
             </a>
           </div>
