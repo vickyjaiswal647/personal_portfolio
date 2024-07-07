@@ -41,9 +41,8 @@ const Experince = () => {
               <h5 className="experience-duration m0"> July 2023 - Oct 2023 </h5>
 
               <p className="experience-description text-align-justify">
-                • Taking doubt sessions on Data Structures and Algortihms Problems in Java. <br/>
-                • Debugging codes of students and correcting their approach for different problems. <br/>
-                • Monitoring the performance of students to make sure that they complete the lectures and assignments on time.
+                • Being the part of B2B Core Platform module, have worked on the core features of the B2B Digital Hub application. <br/>
+                • Developed the usecase Raise ticket from scratch which involves third party CRM API intergration.
               </p>
             </div>
           </div>
@@ -58,10 +57,8 @@ const Experince = () => {
               <h5 className="experience-duration m0"> July 2022 - June 2023 </h5>
 
               <p className="experience-description text-align-justify">
-                • Taking doubt sessions on Full stack web Development. <br/>
-                • Understanding code base of students and correcting their approach for different projects. <br/>
-                • Monitoring the performance of students to make sure that they complete the lectures and assignments on time. <br/>
-                • Evaluating the projects of students including both Front-end and Back-end projects based on the code quality and proper structure, etc.
+                • Worked in an Agile enviroment and responsible for developing and testing the URLS application under the TCS iON URLS module. <br/>
+                • Developed server-side redirection of short URLs for TCS iON URLs application. <br/><br/><br/><br/>
               </p>
             </div>
           </div>

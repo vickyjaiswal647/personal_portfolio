@@ -94,7 +94,7 @@ const Contact = () => {
               <a
                 rel="noopener noreferrer"
                 
-                href="https://www.linkedin.com/in/sagar-garg-00a509125/"
+                href="https://www.linkedin.com/in/vicky-jaiswal-92a33a175/"
               >
                 <i className="fab fa-linkedin-in"></i>
               </a>
@@ -113,7 +113,7 @@ const Contact = () => {
               <a
                 rel="noopener noreferrer"
                
-                href="https://github.com/sagargarg01"
+                href="https://github.com/vickyjaiswal647"
               >
                 <i className="fab fa-github"></i>
               </a>
@@ -122,7 +122,7 @@ const Contact = () => {
               <a
                 rel="noopener noreferrer"
                 
-                href="https://www.facebook.com/sagar.garg.79025"
+                href="#"
               >
                 <i className="fab fa-facebook-f"></i>
               </a>

@@ -9,7 +9,7 @@ const Banner = ({contactRef} ) => {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Engineer", "Developer", "Coder"], // Strings to display
+      strings: ["Engineer", "Developer", "Coder", "Learner"], // Strings to display
       // Speed settings, try different values until you get good results
       startDelay: 100,
       typeSpeed: 70,
@@ -53,7 +53,7 @@ const Banner = ({contactRef} ) => {
             systems to create impact.
           </p>
 
-          <div className="icons-container">
+          {/* <div className="icons-container">
             <a className="icon" href="#">
               <i className="fa-brands text-4xl fa-facebook"></i>
             </a>
@@ -74,7 +74,53 @@ const Banner = ({contactRef} ) => {
             >
               <i className="fa-brands text-4xl fa-linkedin-in"></i>
             </a>
-          </div>
+          </div> */}
+          <div className="banner-social-icons">
+          <ul>
+            <li>
+              <a
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/vicky-jaiswal-92a33a175/"
+              >
+                <i className="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+
+            <li>
+              <a
+                rel="noopener noreferrer"
+                href="mailto:vickyjaiswal647@gmail.com"
+              >
+                <i className="fas fa-envelope"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                rel="noopener noreferrer"
+                href="https://github.com/vickyjaiswal647"
+              >
+                <i className="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                rel="noopener noreferrer"
+                href="#"
+              >
+                <i className="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                rel="noopener noreferrer"
+                hidden
+                href="https://www.quora.com/profile/Sagar-Garg-45"
+              >
+                <i className="fab fa-quora"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
           <br />
           <a className="contact-button" onClick={LinkClickHandler}>
             Contact Me

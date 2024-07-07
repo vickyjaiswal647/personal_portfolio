@@ -21,8 +21,10 @@
 .main-container .text-container p {
   color: gray;
 }
+
+.main-container .text-container h1,
 .paragraph {
-  color: #faf8fafc;
+  color: #faf8fafc !important;
   /* #09172f; */
 }
 
@@ -44,6 +46,17 @@
 
 .main-container .icon:hover {
   background-color: #ed8936;
+}
+.banner-social-icons ul {
+  display: flex;
+  column-gap: 30px;
+  font-size: 1.5rem;
+  justify-content: left;
+  color: black;
+  padding: 0;
+}
+.banner-social-icons li:hover {
+  color: white;
 }
 
 .main-container .contact-button {
@@ -87,20 +100,21 @@
     font-size: 2rem;
     font-weight: bold;
     line-height: 1.3;
+    color: black !important;
   }
 
   .main-container .text-container h2 {
     font-size: 1.5rem;
   }
-  /* .text-container .paragraph {
-    margin-right: 35px;
-  } */
+  .text-container .paragraph {
+    color: black !important;
+  }
   .main-container .text-container h3,
   .main-container .text-container h1,
   .main-container .text-container h2,
   .main-container .text-container p {
     margin: 0.5rem 0;
-    color: #09172f;
+    color: black;
     font-weight: bold;
     line-height: 1.3;
   }

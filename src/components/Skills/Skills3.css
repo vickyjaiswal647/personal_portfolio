@@ -1,6 +1,6 @@
 /* Base Styles */
 #skills {
-  padding: 20px;
+  padding: 50px;
   background-color: #f9f9f9;
   text-align: center;
 }
@@ -22,6 +22,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-left: 1.5rem;
 }
 
 .skill-progress {
