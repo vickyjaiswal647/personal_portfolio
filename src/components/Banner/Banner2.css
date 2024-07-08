@@ -118,6 +118,9 @@
     font-weight: bold;
     line-height: 1.3;
   }
+  .banner-social-icons ul {
+    justify-content: center;
+  }
   .main-container .icons-container {
     /* justify-content: center; */
     gap: 1rem;
