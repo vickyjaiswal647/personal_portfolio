@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import './header2.css';
 
 const Header = ({ sectionRefs }) => {
@@ -11,6 +11,8 @@ const Header = ({ sectionRefs }) => {
     { title: "Education", link: "education", id: 5 },
     { title: "Contact", link: "contact", id: 6 }
   ]);
+
+  const menuRef = useRef(null);
 
   const [actionButton, setActionButton] = useState({
     title: "My Resume",
@@ -26,6 +28,19 @@ const Header = ({ sectionRefs }) => {
   const toggleMenu = () => {
     setMenuActive(!menuActive);
   };
+
+  const handleClickOutside = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setMenuActive(false);
+    }
+  };
+  
+  useEffect(()=>{
+    document.addEventListener('click', handleClickOutside);
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  },[]);
 
   return (
     <div className="header">
@@ -47,7 +62,7 @@ const Header = ({ sectionRefs }) => {
         </a>
       </div>
 
-      <div className={`hamburger ${menuActive ? "active" : ""}`} onClick={toggleMenu}>
+      <div className={`hamburger ${menuActive ? "active" : ""}`} onClick={toggleMenu} ref={menuRef}>
         <div></div>
         <div></div>
         <div></div>
