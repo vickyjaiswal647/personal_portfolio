@@ -8,8 +8,9 @@ const Header = ({ sectionRefs }) => {
     { title: "About", link: "about", id: 2 },
     { title: "Skills", link: "skills", id: 3 },
     { title: "Experience", link: "experience", id: 4 },
-    { title: "Education", link: "education", id: 5 },
-    { title: "Contact", link: "contact", id: 6 }
+    { title: "Project", link: "project", id: 5 },
+    { title: "Education", link: "education", id: 6 },
+    { title: "Contact", link: "contact", id: 7 }
   ]);
 
   const menuRef = useRef(null);
