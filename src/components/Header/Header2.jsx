@@ -19,7 +19,7 @@ const Header = ({ sectionRefs }) => {
     title: "My Resume",
     link: "https://drive.google.com/file/d/1nz0rfL-Wdz-tKZJIxlugbaTTXrKyWT0K/view?usp=sharing",
   });
-
+  
   const [menuActive, setMenuActive] = useState(false);
 
   const LinkClickHandler = (link) => {
