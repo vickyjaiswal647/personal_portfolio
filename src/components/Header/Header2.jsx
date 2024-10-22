@@ -16,7 +16,7 @@ const Header = ({ sectionRefs }) => {
 
   const [actionButton, setActionButton] = useState({
     title: "My Resume",
-    link: "https://drive.google.com/file/d/1kwA_iZzPtjrZdd6LH8QPlrhbVgOadfz-/view?usp=drive_link",
+    link: "https://drive.google.com/file/d/1cuuo45wKRwNImb7QthSu-ql6fwb4-X3C/view?usp=sharing",
   });
 
   const [menuActive, setMenuActive] = useState(false);
